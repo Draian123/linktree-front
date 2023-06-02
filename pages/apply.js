@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import styles from '../styles/apply.module.css'
-import Footer from '../components/Footer'
 import {toast} from 'react-toastify';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
@@ -37,7 +36,7 @@ const Apply = () => {
     .then(data=>{
       console.log(data);
       if(data.status==='success'){
-        toast('You are registered successfully')
+        toast('You registered successfully!')
         localStorage.setItem('LinkTreeToken', data.token);
         setSubmitted(true);
         router.push('/login');
@@ -51,7 +50,7 @@ const Apply = () => {
     <>
       <section className={styles.background + " min-h-screen flex justify-center items-center"}>
         <div className="main">
-            <div className="content bg-white border-2 px-6 py-8 rounded-2xl shadow-lg">
+            <div className="content bg-white border-2 px-4 py-8 rounded-2xl shadow-lg">
               <h1 className="text-2xl font-bold text-center">Join the top 1% creators</h1>
               <p className='text-center'>Create a Linktree for your brand</p>
               <p className='text-center py-5 font-bold text-gray-500'>Start building your Hub</p>
@@ -84,7 +83,6 @@ const Apply = () => {
             <h4 className='text-center text-white pt-3'>Already have an account? <Link className='font-bold text-red-400' href="/login">Login</Link></h4>
         </div>
       </section>
-      {/* <Footer/> */}
     </>
   )
 }
