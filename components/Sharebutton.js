@@ -4,8 +4,6 @@ import { toast } from 'react-toastify'
 
 const Sharebutton = () => {
     const router = useRouter()
-    const url = process.env.BASE_URL
-
     const copyLink = () =>{
         navigator.clipboard.writeText(`https://linktree-front.vercel.app/${router.query.handle}`)
         toast('Copied to clipboard')
