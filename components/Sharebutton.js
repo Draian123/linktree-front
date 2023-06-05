@@ -7,7 +7,7 @@ const Sharebutton = () => {
     const url = process.env.BASE_URL
 
     const copyLink = () =>{
-        navigator.clipboard.writeText(`https://localhost:3000/${router.query.handle}`)
+        navigator.clipboard.writeText(`https://linktree-front.vercel.app/${router.query.handle}`)
         toast('Copied to clipboard')
     }
 

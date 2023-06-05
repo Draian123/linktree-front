@@ -9,8 +9,8 @@ export default function Home() {
       <MyHead
         title="Linktree"
         description="Welcome to Linktree"
-        image="https://typefinance.com/typefinance-dp.jpg"
-        url="https://typefinance.com"
+        image=""
+        url=""
       />
 
       <section className={styles.background + " min-h-screen flex justify-center items-center"}>

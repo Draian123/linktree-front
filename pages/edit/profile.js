@@ -34,7 +34,7 @@ const profile = () => {
     }, [userData]);
     const saveProfile = e =>{
         e.preventDefault();
-        fetch(`http://localhost:8080/save/profile`,{
+        fetch(`https://linktree.adaptable.app/save/profile`,{
             method: 'POST',
             headers: {
                 'Content-type': 'application/json'
@@ -53,7 +53,7 @@ const profile = () => {
     }
     const saveSocials = e =>{
         e.preventDefault();
-        fetch(`http://localhost:8080/save/socials`,{
+        fetch(`https://linktree.adaptable.app/save/socials`,{
             method: 'POST',
             headers: {
                 'Content-type': 'application/json'
@@ -71,7 +71,7 @@ const profile = () => {
 
     useEffect(()=>{
         if(!localStorage.getItem('LinkTreeToken')) return router.push('/login');
-        fetch(`http://localhost:8080/load/socials`,{
+        fetch(`https://linktree.adaptable.app/load/socials`,{
             method: 'POST',
             headers: {
                 'Content-type': 'application/json'
