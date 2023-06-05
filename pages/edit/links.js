@@ -2,7 +2,7 @@ import UserHeader from '../../components/UserHeader'
 import React, {useState, useEffect, useContext} from 'react'
 import {toast} from 'react-toastify'
 
-const links = () => {
+const Links = () => {
   const [links, setLinks] = useState([{url: '', title: '', icon:''}]);
   const [title, setTitle] = useState('');
 
@@ -112,4 +112,4 @@ const links = () => {
   )
 }
 
-export default links
+export default Links

@@ -4,7 +4,7 @@ import UserContext from '../../context/userContext'
 import UserHeader from '../../components/UserHeader'
 import {toast} from 'react-toastify'
 
-const profile = () => {
+const Profile = () => {
     const router = useRouter();
     const {userData, setUserData} = useContext(UserContext);
     const [social, setSocial] = useState({
@@ -152,4 +152,4 @@ const profile = () => {
     )
 }
 
-export default profile
+export default Profile

@@ -42,7 +42,7 @@ const Handle = () => {
             <div className='flex justify-center items-center h-screen'>
                 <div className="not-found px-3 ">
                     <h1 className='font-bold text-lg'>User Not found </h1>                    
-                    <p>If you're looking for a page, double check the spelling.</p>
+                    <p>If you&aposre looking for a page, double check the spelling.</p>
                     Create your own<Link className='bg-indigo-600 px-2 ml-2 text-white hover:bg-indigo-400 transition-all duration-500' href="/apply"> LinkTree</Link>
                 </div>
             </div>

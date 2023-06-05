@@ -43,7 +43,7 @@ const Apply = () => {
         <section className={styles.background + " min-h-screen flex justify-center items-center"}>
             <div className="main">
                 <div className="content bg-white border-2 px-4 py-8 rounded-2xl shadow-lg">
-                <h1 className="text-2xl font-bold text-center">You're now among top creators</h1>
+                <h1 className="text-2xl font-bold text-center">You&aposre now among top creators</h1>
                 <p className='text-center'>Access your Dashboard</p>
                 <p className='text-center py-5 font-bold text-gray-500'>Start building your Hub</p>
                 <form onSubmit={handleLogin} className='flex flex-col gap-4 text-lg mt-5'>

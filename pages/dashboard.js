@@ -4,7 +4,7 @@ import UserHeader from '../components/UserHeader'
 import {toast} from 'react-toastify'
 import UserContext from '../context/userContext'
 
-const dashboard = () => {
+const Dashboard = () => {
 
   const [data, setData] = useState({});
   const {setUserData} = useContext(UserContext);
@@ -52,4 +52,4 @@ const dashboard = () => {
   )
 }
 
-export default dashboard
+export default Dashboard

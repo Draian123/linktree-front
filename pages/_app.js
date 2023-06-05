@@ -49,7 +49,7 @@ export default function App({ Component, pageProps }) {
     <>
     <NavBar/>
     {/* <Script strategy="lazyOnload" src={`https://www.googletagmanager.com/`} /> */}
-    <Script strategy="lazyOnload">
+    <Script id={1} strategy="lazyOnload">
                 {`
                     window.dataLayer = window.dataLayer || [];
                     function gtag(){dataLayer.push(arguments);}

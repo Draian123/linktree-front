@@ -1,6 +1,6 @@
 import React from 'react'
 
-const features = () => {
+const Features = () => {
     return (
         <>
             <div className='w-full h-screen flex flex-col justify-center items-center'>
@@ -20,4 +20,4 @@ const features = () => {
     )
 }
 
-export default features
+export default Features
