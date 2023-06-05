@@ -4,6 +4,8 @@ import { toast } from 'react-toastify'
 
 const Sharebutton = () => {
     const router = useRouter()
+    const url = process.env.BASE_URL
+
     const copyLink = () =>{
         navigator.clipboard.writeText(`https://localhost:3000/${router.query.handle}`)
         toast('Copied to clipboard')

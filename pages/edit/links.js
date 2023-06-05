@@ -14,7 +14,7 @@ const links = () => {
   }
 
   const handleAddLink = () =>{
-    setLinks([...links, {url: '', title: '', icon: ''}]);
+    setLinks([ {url: '', title: '', icon: ''}]);
   }
 
   const handleRemoveLink = (index)=>{

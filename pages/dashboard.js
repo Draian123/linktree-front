@@ -21,6 +21,7 @@ const dashboard = () => {
       })
     }).then(res=>res.json())
     .then(data=>{
+      console.log(data)
       if(data.status==='error') return toast.error('Error happened');
       setData(data.userData);
       setUserData(data.userData);
